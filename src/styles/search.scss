@@ -1,0 +1,47 @@
+.search {
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: 1rem;
+	margin-top: 2rem;
+	form {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		input {
+			font-family: 'Titillium-SemiBold', sans-serif;
+			&[type="text"] {
+				padding-left: .5rem;
+				height: 1.5rem;
+				font-size: .75rem;
+				border-radius: 0;
+				border: 1px solid #8e8e8e;
+			}
+		}
+		.select-wrapper {
+			min-width: 8rem;
+			select {
+				background: #FFFFFF;
+				font-size: 12px;
+				height: 1.75rem;
+				width: 100%;
+				padding-left: .5rem;
+				font-family: 'Titillium-SemiBold', sans-serif;
+				color: #8e8e8e;
+				appearance: none;
+				background-color: transparent;
+				border-radius: 0;
+				border: 1px solid #8e8e8e;
+				position: relative;
+				cursor: pointer;
+				z-index: 2;
+			}
+		}
+		.select-wrapper::after {
+			content: "\25BC";
+			color: #000;
+			position: relative;
+			top: -22px;
+			right: -105px;
+			cursor: pointer;
+		}
+	}
+}

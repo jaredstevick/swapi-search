@@ -1,0 +1,16 @@
+.pagination {
+	margin: 2rem auto 2rem;
+	font: 1.5rem 'Titillium-Extra-Light', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	.prev, .next {
+		&.inactive {
+			color: lightgray;
+			pointer-events: none;
+		}
+		&.active {
+			cursor: pointer;
+			color: black;
+		}
+	}
+}

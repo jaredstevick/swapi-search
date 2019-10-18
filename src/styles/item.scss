@@ -1,0 +1,42 @@
+.item {
+	padding: .5rem;
+	&:nth-of-type(even) {
+		background: #EEEEEE;
+	}
+	.summary, .bio {
+		display: flex;
+	}
+	.summary {
+		display: flex;
+		align-items: baseline;
+		font-size: 1rem;
+		@include for-tablet-portrait-up {
+			font-size: 2rem;
+		}
+		.main {
+			margin-left: .5rem;
+			font-family: 'Titillium-Extra-Light', sans-serif;
+			line-height: 2rem;
+			&.not-found {
+				margin-bottom: .5rem;
+			}
+			@include for-tablet-portrait-up {
+				font-size: 2rem;
+			}
+		}
+	}
+	.bio {
+		text-transform: uppercase;
+		margin-left: calc(20px + .5rem);
+		font-size: .5rem;
+		@include for-tablet-portrait-up {
+			font-size: 1rem;
+			margin-left: calc(40px + .5rem);
+		}
+		font-family: 'Titillium-SemiBold', sans-serif;
+		.divider {
+			margin: 0 .25rem 0 .25rem;
+		}
+	}
+}
+

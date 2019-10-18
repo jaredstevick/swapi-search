@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Star Wars Api Character Search
 
-## Available Scripts
+This project is a simple implementation of the Star Wars api character search using [Create React App](https://github.com/facebook/create-react-app), SCSS, [animate.css](https://daneden.github.io/animate.css/), [axios](https://github.com/axios/axios), and [Font Awesome](https://fontawesome.com/). Components have been made reusable where applicable.
 
-In the project directory, you can run:
+## Features Include
+- Search all characters
+- Search for a specific character
+- Sort results alphabetically or in reverse alphabetical order
+- Pagination
+- Basic animation
+- Responsive Design
 
-### `yarn start`
+### Available Scripts
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### To run this project:
+- clone the repository via: `git clone https://github.com/jaredstevick/swapi-search.git`
+- cd into project directory
+- `npm install` or `yarn install`
+- Create a local build: `npm start` or `yarn start`
+- Create a minified production build: `npm build` or `yarn build`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+### Contributing
+Given more time, this project could include many more features. If you would like to add something, please feel free to open a pull request!
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Ideas include:
+- Show more detailed data about a character by clicking on their name
+- Add more animations
+- Make character data clickable (ex: clicking on a character's planet will show results for all characters from that planet)
+- Add page numbers to the pagination component
+- Anything else _you_ think of!
