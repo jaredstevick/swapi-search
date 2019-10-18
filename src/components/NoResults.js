@@ -2,14 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 
-const NoResults = (error = false) => {
+const NoResults = error => {
 	return (
 		<div className="item">
 			<div className="summary">
 				<div className="icon">
 					<FontAwesomeIcon icon={faExclamationTriangle} fixedWidth />
 				</div>
-				{error ? (
+				{error.length ? (
 					<div className="main not-found">{error.error}</div>
 				) : (
 					<div className="main not-found">We couldn't find the droids you were looking for.</div>

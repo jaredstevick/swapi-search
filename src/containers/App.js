@@ -8,7 +8,7 @@ import Pagination from '../components/Pagination';
 const App = () => {
 	const [ page, setPage ] = useState(1);
 	const [ query, setQuery ] = useState('');
-	const [ error, setError ] = useState(false);
+	const [ error, setError ] = useState(null);
 	const [ isLoading, setIsLoading ] = useState(true);
 	const [ data, setData ] = useState({ results: [], page: 1 });
 	const [ sortOrder, setSortOrder ] = useState();
@@ -16,7 +16,6 @@ const App = () => {
 	useEffect(() => {
 		getQuery('').then(initialResult => {
 			setIsLoading(false);
-			console.log('initialResult', initialResult)
 			initialResult.success ? setData(initialResult.data) : setError(initialResult.error);
 		})
 		.catch(err => {

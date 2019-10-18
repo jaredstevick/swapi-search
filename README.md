@@ -30,4 +30,5 @@ Given more time, this project could include many more features. If you would lik
 - Add page numbers to the pagination component
 - Add more species icons
 - Better handling of the species data. The api doesn't follow the best design pattern, and the icons will all default to the question mark if the api changes
+- Search without hitting enter
 - Anything else _you_ think of!
